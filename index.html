@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/css.css">
+    <title>Encriptador!</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="input-panel">
+            <div class="input-panel-text">
+                <h1>Ingrese el texto aqui</h1>
+                <textarea name="userInput" id="userInput" placeholder="Ingrese texto" rows="3"></textarea>
+            </div>
+            
+            <div class="input-panel-btns">
+                <p>Solo letras minúsculas y sin acentos</p>
+
+                <div class="input-panel-btns-container">
+                    <button id="encriptarBtn">Encriptar!</button>
+                    <button id="desencriptarBtn">Desencriptar!</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="encrypt-panel">
+            <div class="right-panel">
+                <div class="encrypt-panel-text" id="encrypt-panel-text">
+                    <img src="./assets/img/img-notfound.png" alt="imagen indicando que NO SE HA ENCRIPTADO NINGUNA FRASE">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+                </div>
+
+                <p id="encrypted-text" style="display: none;"></p>
+
+            </div>
+
+            <div class="encrypt-panel-btns">
+                <button id="encrypt-copy-btn">copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
